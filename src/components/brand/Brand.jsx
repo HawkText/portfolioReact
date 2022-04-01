@@ -1,23 +1,23 @@
 import React from 'react';
-import { google, slack, atlassian, dropbox, shopify, reactlogo } from './imports';
+import { jsLogo, javaLogo, pylogo, htmlLogo, reactlogo } from './imports';
 import './brand.css';
 
 const Brand = () => (
     <div className="gpt3__brand section__padding">
         <div>
-        <img src={reactlogo} />
+        <img className="logos_bar_div_reactlogo" src={reactlogo} />
         </div>
         <div>
-        <img src={slack} />
+        <img className="logos_bar_div_jslogo" src={jsLogo} />
         </div>
         <div>
-        <img src={atlassian} />
+        <img className="logos_bar_div_javalogo" src={javaLogo} />
         </div>
         <div>
-        <img src={dropbox} />
+        <img className="logos_bar_div_pylogo" src={pylogo} />
         </div>
         <div>
-        <img src={shopify} />
+        <img className="logos_bar_div_html" src={htmlLogo} />
         </div>
     </div>
 );

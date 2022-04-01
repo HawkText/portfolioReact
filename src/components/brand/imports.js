@@ -1,15 +1,13 @@
-import google from '../../assets/google.png';
-import slack from '../../assets/slack.png';
-import atlassian from '../../assets/atlassian.png';
-import dropbox from '../../assets/dropbox.png';
-import shopify from '../../assets/shopify.png';
-import reactlogo from '../../assets/reactLogo.jpg';
+import jsLogo from '../../assets/javascript_logo.png';
+import javaLogo from '../../assets/java_logo.png';
+import htmlLogo from '../../assets/html_logo.png';
+import pylogo from '../../assets/python_logo.png';
+import reactlogo from '../../assets/React_logo_wordmark.png';
 
 export {
-    google,
-    slack,
-    atlassian,
-    dropbox,
-    shopify,
+    jsLogo,
+    javaLogo,
+    htmlLogo,
+    pylogo,
     reactlogo,
 };
