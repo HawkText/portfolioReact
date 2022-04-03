@@ -1,18 +1,12 @@
 import React from 'react';
-import possibilityImage from '../../assets/possibility.png';
+import hawkinsResume from '../../assets/hawkins_matthew_resume_2022.png';
 import './resume.css';
 
 const Resume = () => (
-    <div className="gpt3__possibility section__padding" id="resume">
-        <div className="gpt3__possibility-image">
-        <img src={possibilityImage} alt="possibility" />
-        </div>
-        <div className="gpt3__possibility-content">
-        <h4>Request Early Access to Get Started</h4>
-        <h1 className="gradient__text">The possibilities are <br /> beyond your imagination</h1>
-        <p>Yet bed any for travelling assistance indulgence unpleasing. Not thoughts all exercise blessing. Indulgence way everything joy alteration boisterous the attachment. Party we years to order allow asked of.</p>
-        <h4>Request Early Access to Get Started</h4>
-        </div>
+    <div className="resume__container section__padding matrix__background" id="resume">
+        <h1 className="gradient__text">Matthew Hawkins Resume</h1>
+        <div className="resume_image">
+        <img src={hawkinsResume} alt="hawkins matthew resume" /> </div>
     </div>
 );
 

@@ -6,7 +6,7 @@ import backlogo from '../../assets/back_end_web_dev.png';
 import gamelogo from '../../assets/game_controller_logo.png';
 
 const AboutMe = () => (
-    <div className="gpt3__whatgpt3" id="aboutMe">
+        <div className="gpt3__whatgpt3" id="aboutMe">
         <div className="gpt3__whatgpt3-container">
         <img src={frontlogo} />
         <Feature title="Languages" text="HTML

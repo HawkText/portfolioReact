@@ -40,4 +40,13 @@
     width: 200px;
     height: 65px;
 }
+@media screen and (max-width: 550px) {
+.gpt3__brand {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
 
+}
