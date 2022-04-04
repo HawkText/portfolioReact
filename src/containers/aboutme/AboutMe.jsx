@@ -15,7 +15,7 @@ CSS
 JAVA
 PYTHON
 "/>
-        <Feature title="bla bla" text="We so opinion friends me message as delight. Whole front do of plate heard oh ought. His defective nor convinced residence own. Connection has put impossible own apartments boisterous. At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by." />
+        <Feature title="Quote #1" text='“Good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun.” -Linus Torvalds' />
         </div>
         <div className="aboutme-container">
         <img src={backlogo} />
@@ -26,17 +26,16 @@ DJANGO
 JQUERY
 SPRING
 "/>
-        <Feature title="Back-end" text="We so opinion friends me message as delight. Whole front do of plate heard oh ought. His defective nor convinced residence own. Connection has put impossible own apartments boisterous. At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by." />
+        <Feature title="Quote #2" text='“The best programmers are not marginally better than merely good ones.  They are an order-of-magnitude better, measured by whatever standard: conceptual creativity, speed, ingenuity of design, or problem-solving ability.” - Randall E. Stross' />
         </div>
         <div className="aboutme-container">
         <img src={gamelogo} />
-        <Feature title="Pro Gamer" text="REACTJS
-BOOTSTRAP
-FLASK
-DJANGO
-JQUERY
-SPRING" />
-        <Feature title="Pro Gamer" text="We so opinion friends me message as delight. Whole front do of plate heard oh ought. His defective nor convinced residence own. Connection has put impossible own apartments boisterous. At jointure ladyship an insisted so humanity he. Friendly bachelor entrance to on by." />
+        <Feature title="Pro Gamer" text="APEX LEGENDS
+JEDI OUTCAST
+DONKEY KONG COUNTRY
+QUAKE 2
+" />
+        <Feature title="Quote #3" text='“Whether you want to uncover the secrets of the universe, or you just want to pursue a career in the 21st century, basic computer programming is an essential skill to learn.” - Stephen Hawking' />
         </div>
 </div>
 );

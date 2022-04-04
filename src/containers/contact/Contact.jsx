@@ -43,7 +43,7 @@ export const Contact = () => {
     <div className="contact_form" id="contact">
         <div className="form_container">
         <h1 className="gradient__text">Contact Matthew Hawkins</h1>
-    <form ref={form} onSubmit={sendEmail} onsubmit="return validateForm()" className="form_itself">
+    <form ref={form} onSubmit={sendEmail} name ="contact" className="form_itself">
         <label>Subject</label>
         <input type="text" name="subject" />
         <label>Name</label>
@@ -54,14 +54,11 @@ export const Contact = () => {
         <input type="email" name="email" />
         <label>Message</label>
         <textarea name="message" />
-        <div className="sendEmail">
-        <ReCAPTCHA
-        sitekey="6Leo4kEfAAAAAPLLTpt6Z8ejEtO8w3awMVHnkq6A"
-        onChange={showSubmit}
-        />
-                <div className="contact_button" id="myP2" visibility="hidden">
+
+        <ReCAPTCHA sitekey="6Leo4kEfAAAAAPLLTpt6Z8ejEtO8w3awMVHnkq6A" onChange={showSubmit}/>
+        <div className="contact_button" id="myP2" visibility="hidden">
         <button type="submit" value="Send">Contact Now</button>
-        </div>
+
     </div>
     </form>
     </div>
