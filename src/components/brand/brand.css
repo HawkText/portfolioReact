@@ -1,11 +1,11 @@
-.gpt3__brand {
+.brand {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     
 }
 
-.gpt3__brand div {
+.brand div {
     flex: 1;
     max-width: 250px;
     min-width: 120px;
@@ -41,7 +41,7 @@
     height: 65px;
 }
 @media screen and (max-width: 550px) {
-.gpt3__brand {
+.brand {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;

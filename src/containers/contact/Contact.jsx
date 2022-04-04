@@ -1,38 +1,73 @@
-import React from 'react';
-import Feature from '../../components/feature/Feature';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import ReCAPTCHA from 'react-google-recaptcha';
 import './contact.css';
+export const Contact = () => {
 
-const featuresData = [
-    {
-        title: 'Improving end distrusts instantly',
-        text: 'From they fine john he give of rich he. They age and draw mrs like. Improving end distrusts may instantly was household applauded.',
-    },
-    {
-        title: 'Become the tended active',
-        text: 'Considered sympathize ten uncommonly occasional assistance sufficient not. Letter of on become he tended active enable to.',
-    },
-    {
-        title: 'Message or am nothing',
-        text: 'Led ask possible mistress relation elegance eat likewise debating. By message or am nothing amongst chiefly address.',
-    },
-    {
-        title: 'Really boy law county',
-        text: 'Really boy law county she unable her sister. Feet you off its like like six. Among sex are leave law built now. In built table in an rapid blush..',
-    },
-    ];
 
-    const Contact = () => (
-    <div className="gpt3__features section__padding" id="contact">
-        <div className="gpt3__features-heading">
-        <h1 className="gradient__text">The Future is Now and You Just Need to Realize It. Step into Future Today. & Make it Happen.</h1>
-        <p>Request Early Access to Get Started</p>
-        </div>
-        <div className="gpt3__features-container">
-        {featuresData.map((item, index) => (
-            <Feature title={item.title} text={item.text} key={item.title + index} />
-        ))}
+        
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        let x = document.forms["contact"]["subject"].value;
+        let y = document.forms["contact"]["name"].value;
+        let w = document.forms["contact"]["message"].value;
+        if (x == "") {
+            alert("Subject must be filled out");
+            return false;
+        }
+        else if (y == "") {
+            alert("Name must be filled out");
+            return false;
+        }
+        else if (w == "") {
+            alert("Message must be filled out");
+            return false;
+        }
+        
+    e.preventDefault();
+
+    emailjs.sendForm('service_t477d9h', 'template_mh73ogk', form.current, 'Y7eerj57VqJULbIp2')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+        form.current.reset()
+    };
+    function showSubmit(){
+        document.getElementById("myP2").style.visibility = "visible"
+
+    }
+    return (
+    <div className="contact_form" id="contact">
+        <div className="form_container">
+        <h1 className="gradient__text">Contact Matthew Hawkins</h1>
+    <form ref={form} onSubmit={sendEmail} onsubmit="return validateForm()" className="form_itself">
+        <label>Subject</label>
+        <input type="text" name="subject" />
+        <label>Name</label>
+        <input type="text" name="name" />
+        <label>Company</label>
+        <input type="text" name="company" />
+        <label>Email</label>
+        <input type="email" name="email" />
+        <label>Message</label>
+        <textarea name="message" />
+        <div className="sendEmail">
+        <ReCAPTCHA
+        sitekey="6Leo4kEfAAAAAPLLTpt6Z8ejEtO8w3awMVHnkq6A"
+        onChange={showSubmit}
+        />
+                <div className="contact_button" id="myP2" visibility="hidden">
+        <button type="submit" value="Send">Contact Now</button>
         </div>
     </div>
-);
+    </form>
+    </div>
+    </div>
+    
+    );
+};
 
 export default Contact;

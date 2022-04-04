@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Footer, Projects, Resume, Contact, Aboutme, Header } from './containers';
-import { CTA, Brand, Navbar, SearchBar } from './components';
+import { Brand, Navbar, SearchBar } from './components';
 import './App.css';
 import BookData from "./Data.json";
 
@@ -20,7 +20,6 @@ const App = () => {
             <Projects />
             <Resume />
             <Contact />
-            <CTA />
             <Footer />
         </div>
     )

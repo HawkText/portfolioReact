@@ -1,3 +1,7 @@
+.search{
+  margin-right: 25px;
+}
+
 .searchInputs {
     margin-top: 0px;
     display: flex;
@@ -91,8 +95,8 @@
       background: var(--color-footer);
       padding: 2rem;
       position: absolute;
-      right: 14px;
-      top: 47px;
+      right: 23px;
+      top: 32px;
       margin-right: 2px;
       margin-top: 1rem;
       min-width: 300px;
@@ -152,7 +156,7 @@
       width: 200px;
     }
     .dataResult{
-      top: 109px;
+      top: 78px;
       min-width: 50px;
       right: -1px;
     }

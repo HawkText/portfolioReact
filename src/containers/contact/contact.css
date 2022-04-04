@@ -1,60 +1,96 @@
-.gpt3__features {
-    width: 100%;
+.contact_form{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:-moz-radial-gradient(circle at 20% 20%, rgba(15, 213, 80, 1) 0%, rgba(20, 70, 38, 1) 100%);
+    background:-webkit-radial-gradient(circle at 20% 20%, rgba(15, 213, 80, 1) 0%, rgba(20, 70, 38, 1) 100%);
+    background:-o-radial-gradient(circle at 20% 20%, rgba(15, 213, 80, 1) 0%, rgba(20, 70, 38, 1) 100%);
+    background:radial-gradient(circle at 20% 20%, rgba(15, 213, 80, 1) 0%, rgba(20, 70, 38, 1) 100%);
+    padding-top: 95px;
+    padding-bottom: 15px;
+    
+}
+
+.form_container{
+    background:-moz-radial-gradient(circle at 20% 20%, rgba(20, 70, 38, 1) 0%, rgba(15, 213, 80, 1) 100%);
+    background:-webkit-radial-gradient(circle at 20% 20%, rgba(20, 70, 38, 1) 0%, rgba(15, 213, 80, 1) 100%);
+    background:-o-radial-gradient(circle at 20% 20%, rgba(20, 70, 38, 1) 0%, rgba(15, 213, 80, 1) 100%);
+    background:radial-gradient(circle at 20% 20%, rgba(20, 70, 38, 1) 0%, rgba(15, 213, 80, 1) 100%);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.form_itself{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    background:-moz-radial-gradient(circle at 20% 20%, rgba(15, 213, 80, 1) 0%, rgba(20, 70, 38, 1) 100%);
+    background:-webkit-radial-gradient(circle at 20% 20%, rgba(15, 213, 80, 1) 0%, rgba(20, 70, 38, 1) 100%);
+    background:-o-radial-gradient(circle at 20% 20%, rgba(15, 213, 80, 1) 0%, rgba(20, 70, 38, 1) 100%);
+    background:radial-gradient(circle at 20% 20%, rgba(15, 213, 80, 1) 0%, rgba(20, 70, 38, 1) 100%);
+    
+}
+.contact_form input{
+    justify-self: center;
+    background-color: rgb(223, 219, 215);
+    padding: 10px;
+    width: 304px;
+    border-radius: 10px;
+    font-size: 22px;
+}
+
+.contact_form textarea{
+    justify-self: center;
+    padding: 10px;
+    width: 304px;
+    background-color: rgb(223, 219, 215);
+    border-radius: 10px;
+    font-size: 22px;
+}
+
+.contact_form label{
+    justify-content: center;
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
-}
-
-.gpt3__features-heading {
-    flex: 1;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
     flex-direction: column;
-
-    text-align: left;
-    margin-right: 5rem;
+    padding: 10px;
+    color: aquamarine;
 }
 
-.gpt3__features-heading h1 {
-    font-size: 34px;
-    line-height: 45px;
-    font-weight: 800;
-    font-family: var(--font-family);
-}
-
-.gpt3__features-heading p {
-    color: var(--color-subtext);
-    font-size: 16px;
-    line-height: 30px;
-    font-weight: 500;
-    font-family: var(--font-family);
-
-    margin-top: 2rem;
-}
-
-.gpt3__features-container {
-    flex: 1.5;
+.contact_button {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
+    visibility: hidden;
 }
+
+.contact_button button {
+    background: rgb(10, 218, 114);
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 5px;
+    border-radius: 1rem;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    cursor: pointer;
+    min-width: 150px;
+}
+
 
 @media screen and (max-width: 990px) {
-    .gpt3__features {
-        flex-direction: column;
-    }
 
-    .gpt3__features-heading {
-        margin: 0 0 2rem 0;
-    }
 }
 
 
 @media screen and (max-width: 550px) {
-    .gpt3__features-heading h1 {
-        font-size: 28px;
-        line-height: 38px;
-    }
+
 }

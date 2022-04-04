@@ -3,7 +3,7 @@ import { jsLogo, javaLogo, pylogo, htmlLogo, reactlogo } from './imports';
 import './brand.css';
 
 const Brand = () => (
-    <div className="gpt3__brand section__padding">
+    <div className="brand section__padding">
         <div>
         <img className="logos_bar_div_reactlogo" src={reactlogo} />
         </div>
