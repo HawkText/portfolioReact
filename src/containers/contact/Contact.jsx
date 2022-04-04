@@ -55,7 +55,7 @@ export const Contact = () => {
         <label>Message</label>
         <textarea name="message" />
 
-        <ReCAPTCHA sitekey="6Leo4kEfAAAAAPLLTpt6Z8ejEtO8w3awMVHnkq6A" onChange={showSubmit}/>
+        <ReCAPTCHA sitekey="6LfzCkcfAAAAALBTrGgXoUsKJ0eetyajnu6g6iv5" onChange={showSubmit}/>
         <div className="contact_button" id="myP2" visibility="hidden">
         <button type="submit" value="Send">Contact Now</button>
 
