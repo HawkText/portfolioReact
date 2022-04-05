@@ -11,7 +11,7 @@ const Projects = () => (
         <div className="blog-container">
 
             <div className="blog-container_groupB">
-            <Article imgUrl={project1} date="Mar, 2022" text="Link Guy Rupee Collector JavaScript Game" reDirect="http://www.google.com" link_text="Weeee"  />
+            <Article imgUrl={project1} date="Mar, 2022" text="Link Guy Rupee Collector JavaScript Game" reDirect="http://www.hawktext.com/link_guy_rupee_collector.html" link_text="Play Now!"  />
                 <Article imgUrl={project2} date="Jan, 2022" text="Drone For Wedding"  reDirect="http://www.google.com" link_text="Weeee"  />
                 <Article imgUrl={project3} date="Feb, 2022" text="HawkText With Login and Registration"  reDirect="http://www.google.com" link_text="Weeee"  />
                 <Article imgUrl={project4} date="Feb, 2022" text="Crypto Currency Tracker"  reDirect="http://www.google.com" link_text="Weeee"  />
